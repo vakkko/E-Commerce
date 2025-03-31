@@ -9,12 +9,11 @@ export default function SaleAlert() {
   };
 
   return (
-    <SaleCont close={close}>
+    <SaleCont $close={close}>
       <div>
         <img src="./assets/percent-icon.svg" alt="percent icon" />
         <p>30% off storewide — Limited time! </p>
         <a href="#">
-          {" "}
           Shop Now <img src="./assets/arrow-right.svg" alt="arrow-rigth" />
         </a>
       </div>

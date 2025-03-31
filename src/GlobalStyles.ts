@@ -31,6 +31,13 @@ a{
     text-decoration: none;
 }
 
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 `;
 
 export default GlobalStyles;

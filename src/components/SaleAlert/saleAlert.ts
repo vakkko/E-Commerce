@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
-export const SaleCont = styled.div<{ close: boolean }>`
+export const SaleCont = styled.div<{ $close: boolean }>`
   background-color: var(--lightGray);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.1rem;
-  ${({ close }) =>
-    close &&
+  height: 4.3rem;
+  ${({ $close }) =>
+    $close &&
     `
   animation: closeAlert 0.2s ease-in forwards;
   `}
@@ -18,6 +19,8 @@ export const SaleCont = styled.div<{ close: boolean }>`
     }
     to {
       transform: translateY(-100%) scaleY(0);
+      height: 0;
+      display: none;
     }
   }
 
