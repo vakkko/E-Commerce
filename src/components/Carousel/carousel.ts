@@ -43,3 +43,28 @@ export const Images = styled.div`
     border-radius: 15px;
   }
 `;
+
+export const DotDivs = styled.div`
+  position: absolute;
+  bottom: 3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+`;
+
+export const DotDiv = styled.div<{ $active: boolean }>`
+  height: 8px;
+  border-radius: 4px;
+  background-color: white;
+  transition: width 0.2s ease-in-out;
+  cursor: pointer;
+
+  ${(props) => {
+    return props.$active
+      ? { width: "30px", borderRadius: "20px" }
+      : { width: "8px" };
+  }};
+`;

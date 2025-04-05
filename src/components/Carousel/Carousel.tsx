@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { CarouselDiv, SwipeArrows, Images } from "./carousel";
+import {
+  CarouselDiv,
+  SwipeArrows,
+  Images,
+  DotDivs,
+  DotDiv,
+} from "./carousel.ts";
 
 export default function Carousel() {
   const [currentImg, setCurrentImg] = useState<number>(0);
@@ -26,6 +32,10 @@ export default function Carousel() {
       alt: "gray table",
     },
   ];
+
+  const changeImg: (numb: number) => void = (numb: number) => {
+    setCurrentImg(numb);
+  };
 
   return (
     <CarouselDiv>
@@ -93,6 +103,20 @@ export default function Carousel() {
           </svg>
         </button>
       </SwipeArrows>
+      <DotDivs>
+        <DotDiv
+          onClick={() => changeImg(0)}
+          $active={currentImg === 0}
+        ></DotDiv>
+        <DotDiv
+          onClick={() => changeImg(1)}
+          $active={currentImg === 1}
+        ></DotDiv>
+        <DotDiv
+          onClick={() => changeImg(2)}
+          $active={currentImg === 2}
+        ></DotDiv>
+      </DotDivs>
     </CarouselDiv>
   );
 }
