@@ -39,6 +39,8 @@ export const SaleCont = styled.div<{ $close: boolean }>`
   & > div > a {
     display: flex;
     align-items: center;
+    color: #377dff;
+    border-bottom: 1px solid var(--blue);
   }
 
   & > img {

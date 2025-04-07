@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 export const CarouselDiv = styled.div`
   position: relative;
-  width: 112rem;
-  margin: 0 auto;
+  margin: 0 16rem;
 `;
 
 export const SwipeArrows = styled.div`
   width: 100%;
   position: absolute;
   z-index: 2;
-  top: 26rem;
+  top: 50%;
   display: flex;
   justify-content: space-between;
   padding: 0 3.2rem;
@@ -37,8 +36,8 @@ export const Images = styled.div`
   overflow: hidden;
 
   & > img {
-    height: 53.6rem;
-    width: 112rem;
+    width: 100%;
+    max-height: 80rem;
     flex-shrink: 0;
     border-radius: 15px;
   }
