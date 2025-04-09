@@ -14,7 +14,7 @@ export default function SaleAlert() {
         <img src="./assets/percent-icon.svg" alt="percent icon" />
         <p>30% off storewide — Limited time! </p>
         <a href="#">
-          Shop Now <img src="./assets/arrow-right.svg" alt="arrow-rigth" />
+          Shop Now <img src="./assets/arrow-right-blue.svg" alt="arrow-right" />
         </a>
       </div>
       <img onClick={handleClick} src="./assets/close.svg" alt="close icon" />

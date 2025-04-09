@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const SloganDiv = styled.div`
   display: flex;
-  gap: 7rem;
+  justify-content: space-between;
   align-items: center;
   margin: 3.2rem 16rem;
+  padding-right: 2.9rem;
 
   & > h1 {
     font-size: 7.2rem;
